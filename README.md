@@ -50,11 +50,11 @@ I used data from the "Pump It Up" competition on the DataDriven website. I combi
 ## Process:
 I screened the data and looked at the target, status_group closely. I looked at all of the features that had any impact on the target. No outliers were dropped but null values were replaced with zeros.  I created my baseline model with only seven features. I believed that without any deep data diving, these seven features were the most impactful features. 
 I then used an iterative process to create more predictive models to come up with the best accuracy score.
-
+https://github.com/EmmaChoate/Phase_3_Project/blob/main/images/functionality_barchart.png
 ## Methods and Results:
 First, I cleaned the data and made a new data frame called training. This data frame contained 21 columns and 27,813 rows. I started with a baseline model with only 7 features as I explained above. I scaled the numerical data and one hot encoded the categorical columns to increase the predictabilty of my models. I merged the data together to then run through a logistic regression model. The baseline model gave me a training accuracy of 0.6888. 
 Once I had my baseline model built I was able to run multiple models from a function that I created. My first, second, and third models were logistic regression models. The first model, the best model, ran as just a logistic regression with no parameters and had a validation accuracy score of 0.785. For the second model, I used SMOTE to fix the class imbalance. Once I fixed the class imbalance my validation accuracy went down from 0.785 to 0.703. For the third model, I used a modeling score function instead of just a modeling function. My model ran produced validation score of 0.702. Model four and five were both run with a random forest classifier to help with the possibility of overfitting. I used a grid search on both models to find the best parameters to use to maximize the accuracy of the model. Model four ran a validation accuracy score of 0.828, but was very overfit therefore even though the score was better, the model was not running well. Model five ran with a validation accuracy of 0.763. 
-
+https://github.com/EmmaChoate/Phase_3_Project/blob/main/images/confusion_matrix.png
 ## Conclusions:
 -	I was able to create a model that can predict the functionality of a well with 78.5% accuracy
 -	My model can be used to help the water problem that is effecting millions of people in Tanzania and in other parts of the world that are having similar issues
@@ -62,5 +62,6 @@ Once I had my baseline model built I was able to run multiple models from a func
 
 ## For More Information:
 Please review my full analysis in my Jupyter Notebook or my presentation 
+https://github.com/EmmaChoate/Phase_3_Project/blob/main/water_data.ipynb
 
 For any additional questions, please contact me at emmachoate11@gmail.com
