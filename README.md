@@ -1,4 +1,4 @@
-# Tanzinia_Water_Wells
+# Tanzania _Water_Wells
 ## Overview
 For this project, I used multiple modeling techniques to predict the functionality of water wells in Tanzania. 
 
